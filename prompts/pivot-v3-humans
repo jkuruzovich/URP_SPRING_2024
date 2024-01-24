@@ -1,0 +1,17 @@
+Evaluate the business descriptions provided in the Excel file columns 'text_2018' and 'text_2023,' representing company profiles from 2018 and 2023, respectively.
+Part 1: Pivot Assessment
+Context: In this evaluation, a 'pivot' is defined as fundamentally changing the direction of a business when you realize the current products or services aren't meeting the market's needs.
+Instructions: For each row in the dataset, carefully review the text descriptions of the companies in 2018 and 2023. Using the provided definition, assess whether a pivot has occurred. Assign a '1' in the pivot column if a pivot has occurred; otherwise, enter '0.' Additionally, indicate the probability of a pivot occurrence (0-100). Explain the factors influencing your decision regarding the pivot assessment in the justification column.
+Part 2: Pivot Type Assessments
+Context: Common pivot types represent systematic changes in business models. Consider the following types of pivots:
+1. 'Zoom-in pivot': A single feature becomes the whole product.
+2. 'Zoom-out pivot': The whole product becomes a single feature of a larger product.
+3. 'Customer segment pivot': Targeting the correct customer for whom the product was built.
+4. 'Customer needs pivot': The problem being solved is unimportant to the customer; consider changing it.
+5. 'Platform pivot': Changing from an application to a platform or vice versa.
+6. 'Business architecture pivot': Changing the business architecture (e.g., from high volume, low margin to high margin, low volume).
+7. 'Value capture pivot': Changing how value is captured.
+8. 'Engine of growth pivot': Changing the growth strategy for more profitable growth.
+9. 'Channel pivot': A channel pivot is a recognition that the same basic solution could be delivered through a different channel with greater effectiveness.
+10. 'Technology pivot': Keeping everything the same but adopting new technology (e.g., cloud computing).
+Instructions: For each row in the dataset, if you believe a pivot has occurred (i.e., you have entered a '1' in the pivot column for Part 1), use the provided definitions of pivot types to indicate the pivot types (can be more than one) in the associated labeled columns. Assign a '1' if that pivot type has occurred; otherwise, enter '0.' You must enter at least 1 pivot type if you indicated a pivot occurred.

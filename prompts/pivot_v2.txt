@@ -1,0 +1,44 @@
+import json
+
+def ChatGPT(df):
+    result = df.copy()
+
+    for index, row in df.iterrows():
+        
+        prompt = f"""
+        You will be provided with texts from excel file "2018: {row['text_2018']} & 2023: {row['text_2023']}
+        If it contains a significant business model change, please return 1 with confidence rate (1-7) and specify the type of pivot:
+
+        'zoom-in pivot': A single feature becomes the whole product.
+        'zoom-out pivot': The whole product becomes a single feature of a larger product.
+        'customer segment pivot': Targeting the correct customer for whom the product was built.
+        'customer need pivot': The problem being solved is not important to the customer, consider changing it.
+        'platform pivot': Changing from application to platform or vice versa.
+        'business architecture pivot': Changing the business architecture (e.g., from high volume, low margin to high margin, low volume).
+        'value capture pivot': Changing the way value is captured.
+        'engine of growth pivot': Changing the growth strategy for more profitable growth.
+        'channel pivot': Finding a creative and effective way to reach customers.
+        'technology pivot': Keeping everything the same, but adopting new technology (e.g., cloud computing).
+
+        Please provide a justification for your choice.
+
+        If the startup did not undergo a pivot, simply write \"No pivot.\"
+
+        Provided Descriptions:
+        2018: {row['text_2018']}
+        2023: {row['text_2023']}
+
+        Provide the information in JSON format with the following keys:
+        Pivot, confidence rate, type of pivot, justification.
+        """
+
+        response = get_completion(prompt)
+        print("Completion for Business_description_2018 and Business_description_2023:")
+        print(response)
+
+        alldata, response = utils.get_completion(prompt)
+        response = json.loads(response)
+        
+newdf = ChatGPT(df)
+# newdf.to_csv('pivot_prompt.csv')
+newdf
