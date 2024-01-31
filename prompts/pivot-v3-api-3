@@ -1,0 +1,32 @@
+
+Evaluate the business descriptions:
+
+key: {key}
+text_2018: {text_2018}
+text_2023: {text_2023}
+
+**part1: Pivot Assessment**\n\n*Context:* In this evaluation, a 'pivot' is defined as fundamentally changing the direction of a business when you realize the current products or services aren't meeting the needs of the market.\n\n*Instructions:* For each row in the dataset, carefully review the text descriptions of the companies in 2018 and 2023. Using the provided definition, assess whether a pivot has occurred. Assign a '1' in the pivot column if a pivot has occurred; otherwise, enter '0.' Additionally, indicate the probability of a pivot occurrence (0-100). Explain the factors influencing your decision regarding the pivot assessment in the justification column.\n\n
+
+**part2: Pivot Type Assessments**\n\n*Context:* Common pivot types represent systematic changes in business models. Consider the following types of pivots:\n1. 'Zoom-in pivot': A single feature becomes the whole product.\n2. 'Zoom-out pivot': The whole product becomes a single feature of a larger product.\n3. 'Customer segment pivot': Targeting the correct customer for whom the product was built.\n4. 'Customer needs pivot': The problem being solved is unimportant to the customer; consider changing it.\n5. 'Platform pivot': Changing from an application to a platform or vice versa.\n6. 'Business architecture pivot': Changing the business architecture (e.g., from high volume, low margin to high margin, low volume).\n7. 'Value capture pivot': Changing the way value is captured.\n8. 'Engine of growth pivot': Changing the growth strategy for more profitable growth.\n9. 'Channel pivot': A channel pivot is a recognition that the same basic solution could be delivered through a different channel with greater effectiveness.\n10. 'Technology pivot': Keeping everything the same but adopting new technology (e.g., cloud computing).\n\n*Instructions:* For each row in the dataset, if you believe a pivot has occurred (i.e., you have entered a '1' in the pivot column for Part 1), use the provided definitions of pivot types to indicate the pivot types (can be more than one) in the associated labeled columns. Assign a '1' if that pivot type has occurred; otherwise, enter '0.' You must enter at least 1 pivot type if you indicated that a pivot occurred.
+
+**part3: Example of business descriptions that do not pivot "0" and pivot "1"
+  "examples_ pivot ": {
+"0": " Business_description_2018: Take1 Marketing, Inc. is a full service marketing firm focused on getting your business in front of customers. We can provide everything from website design, professional video services, SEM, and SEO. Our company is at the forefront of video production and optimization with mobile applications utilizing google hangouts to increase customer exposure and interaction! Using the latest software, my team is constantly staying ahead of the competition. We are showing clients all over the country how to generate leads, dominate on social media sites, and how to increase their ROI through simple online research, analysis, optimization, and content management! Imagine having your videos spread out on the top video sites, the top audio sites, and the 50+ social media sites available to you. We can help your business explode overnight! Call us today for a FREE quote and complimentary website Audit! Business_description_2023: Take1 Marketing is a marketing firm on getting your business in front of customers. They can provide everything from website design, professional video services, SEM, and SEO. Our company is at the forefront of video production and optimization with mobile applications utilizing google hangouts to increase customer exposure and interaction! Using the latest software, my team is constantly staying ahead of the competition. We are showing clients all over the country how to generate leads, dominate on social media sites, and how to increase their ROI through simple online research, analysis, optimization, and content management. Imagine having your videos spread out on the top video sites.",
+"1": "Business_description_2018: With nearly 20 years of experience and hundreds of happy clients, Information Technology Professionals provides managed IT service and strategy for small to mid-sized businesses, delivering customized technology solutions that allow their clients to function at peak performance and profitability. While they serve clients of all shapes and sizes across a variety of industries, they are highly experienced in meeting IT needs in the manufacturing, medical, and professional services (both legal and financial) sectors. Business_description_2023: If you are looking for travel tips, health guides, and many more tips or tricks, visit the weblyen and read our blogs. And solve your problems or issues by yourself. "
+}
+
+Sample JSON return:
+{'key': key
+'pivot': 0,
+'probability': 0,
+'justification': "justification",
+'zoom-in_pivot': 0,
+'zoom-out_pivot': 0,
+'customer_segment_pivot': 0,
+'customer_needs_pivot': 0,
+'platform_pivot': 0,
+'business_architecture_pivot': 0,
+'value_capture_pivot': 0,
+'engine_of_growth_pivot': 0,
+'channel pivot': 0,
+'technology_pivot': 0}

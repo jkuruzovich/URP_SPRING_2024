@@ -1,0 +1,16 @@
+
+Evaluate the business descriptions:
+
+key: {key}
+text_2018: {text_2018}
+text_2023: {text_2023}
+
+**part1: Pivot Assessment**\n\n*Context:* In this evaluation, a 'pivot' is defined as fundamentally changing the direction of a business when you realize the current products or services aren't meeting the needs of the market.\n\n*Instructions:* For each row in the dataset, carefully review the text descriptions of the companies in 2018 and 2023. Using the provided definition, assess whether a pivot has occurred. Assign a '1' in the pivot column if a pivot has occurred; otherwise, enter '0.' Additionally, indicate the probability of a pivot occurrence (0-100). Explain the factors influencing your decision regarding the pivot assessment in the justification column.\n\n
+
+
+Sample json return:
+{'key': key
+'pivot': 0,
+'probability': 0,
+'justification': "justification"
+}
