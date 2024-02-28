@@ -1,0 +1,38 @@
+We would like your assistance with labeling the quality of a business description. 
+
+We would like you to then provide an assessment of the overall quality of the 2018_description and the 2023_description below. A quality description means that key parts of the business model canvas can be understood by the description. Each quality rating would be 1-10. The quality of the 2018_description should be given in the field '2018_quality' and be in the range 1-10. The quality of the 2023_description should be given in the field '2023_quality' and be in the range 1-10. The feasiblity of the business model should be assessed from 1-10 '2018_feasiblity' and '2023_feasiblity'. Further, the customers, value propositions, channels, and revenues should be indicated in a short summary for each of the associated variables. No descriptions should include the names of the companies. 
+
+key: {key}
+---
+2018_description:
+ {2018_description}
+ ---
+2023_description:
+ ---
+ {2023_description}
+
+Sample output.
+{'key': key,
+'2018_quality': 5,
+'2018_feasiblity': 5,
+'2018_customer_segments': 'description',
+'2018_value_propositions': 'description',
+'2018_channels': 'description',
+'2018_customer_relationships': 'description',
+'2018_key_partners': 'description',
+'2018_key_activities': 'description',
+'2018_key_resources': 'description',
+'2018_revenues': 'description',
+'2018_costs': 'description',
+'2023_quality': 5,
+'2023_feasiblity': 5,
+'2023_customer_segments': 'description',
+'2023_value_propositions': 'description',
+'2023_channels': 'description',
+'2023_customer_relationships': 'description',
+'2023_key_partners': 'description',
+'2023_key_activities': 'description',
+'2023_key_resources': 'description',
+'2023_revenues': 'description',
+'2023_costs': 'description',
+}
