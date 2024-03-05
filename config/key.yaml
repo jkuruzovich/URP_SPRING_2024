@@ -1,0 +1,6 @@
+openai: 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
+huggingface: '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'
+google: 'AIzaSyCxd4NKTkGAQgOe_wsAgqjKNxVxoeewzw8'
+local_models: ['llama2']
+llama2: 'TheBloke/Llama-2-7B-Chat-GGUF/llama-2-7b-chat.Q4_K_M.gguf'
+llama2: 'TheBloke/Llama-2-7B-Chat-GGUF/llama-2-7b-chat.Q4_K_M.gguf'
